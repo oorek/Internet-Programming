@@ -1,0 +1,43 @@
+<HTML>
+<TITLE>Sign-Up Form </TITLE>
+<H1>Sign-Up Form </H1>
+
+<FORM METHOD="GET" ACTION="http://cspro.sogang.ac.kr/~cse20171657/cgi-bin/signup.php">
+<H2>Fill out the following form to sign up ! </H2>
+Your ID: <INPUT NAME="id"> <P>
+Your Password: <INPUT TYPE="password" NAME="pwd"> <P>
+Your Email : <INPUT TYPE="email" NAME="email"> <P>
+Your Address : <INPUT NAME="addr"> <P>
+Your School : <INPUT NAME="school"> <P>
+Check your Major <P>
+<OL>
+<SELECT NAME="major">
+  <OPTION VALUE="ComputerScience">Computer Science</OPTION>
+  <OPTION VALUE="Mechanic">Electronic</OPTION>
+  <OPTION VALUE="Electronic">Chemical and Biomolecular</OPTION>
+  <OPTION VALUE="Business">Mechanical</OPTION>
+  <OPTION VALUE="Economics">Else</OPTION>
+</SELECT>
+
+</OL>
+Your HP : <INPUT TYPE="tel" INPUT NAME="HP"> <P>
+What is your interest? <P>
+<OL>
+<LI> <INPUT TYPE="checkbox" NAME="interest[]" VALUE="Computer Science"> Computer Science
+<LI> <INPUT TYPE="checkbox" NAME="interest[]" VALUE="Electronic"> Electronic
+<LI> <INPUT TYPE="checkbox" NAME="interest[]" VALUE="Chemical and Biomolecular"> Chemical and Biomolecular
+<LI> <INPUT TYPE="checkbox" NAME="interest[]" VALUE="Mechanical"> Mechanical
+<LI> <INPUT TYPE="checkbox" NAME="interest[]" VALUE="Else"> Else  
+</OL>
+<OL>
+To sign in, press this button!: <INPUT TYPE="submit"VALUE="signup">. <P>
+</FORM>
+<HR> <P>
+  Things you may want to note: <P>
+  <UL>
+  <LI> Radio buttons (type <CODE>RADIO</CODE>) are one-of-many input elements. The "many" is all radio buttons in the form with the same <CODE>NAME</CODE>.
+  <LI> In other ways, <CODE>RADIO</CODE> is the same as <CODE>CHECKBOX</CODE>.
+  <LI> Multiple sets of radio buttons (radio buttons with the same <CODE>NAME</CODE>) can be in a single form. This may require careful document/interface design to keep things obvious -- don't intermix radio buttons of different <CODE>NAME</CODE> values, or the user won't understand how the interface works.
+  </UL>
+  <A HREF="example-6.html">Back to example 6</A> or <A HREF="example-8.html">forward to example 8</A>. <P>
+</HTML>
